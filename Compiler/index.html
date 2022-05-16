@@ -1,0 +1,69 @@
+<html>
+
+  <head>
+    <title>My Compiler</title>
+    <style>
+      #langId
+      {
+        margin-left: 400px;
+        margin-right: 2px;
+        background-color: beige;
+      }
+      #textArea
+      {
+        background-color: antiquewhite;
+        margin: 5px;
+        resize: none;
+        height: 300px;
+        width: 600px;
+      }
+      #output
+      {
+        background-color: black;
+        color: yellow;
+        margin-top: 10px;
+        resize: none;
+        height: 100px;
+        width: 600px;
+      }
+      #compileButton
+      {
+        background-color: chocolate;
+        margin:10px;
+        color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="topDiv" id="div">
+        <span>Type Your Code</span>
+        <select id="langId" name="langId">
+          <option value="7">C</option>
+          <option value="77">C++</option>
+          <option value="8">Java</option>
+          <option value="0">Python</option>
+          <option value="4">Javascript</option>
+        </select>
+      </div>
+
+      <div class="inputDiv">
+        <textarea id="textArea" placeholder="Type Your Code Here...."></textarea>
+      </div>
+
+      <div class="outputDiv">
+        <textarea id="output" placeholder="OUTPUT=>"></textarea>
+      </div>
+
+      <div class="bottomDiv">
+        <button id="compileButton" class="compile">Compile & Run</button>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+
+</html>
